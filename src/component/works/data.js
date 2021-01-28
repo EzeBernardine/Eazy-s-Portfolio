@@ -1,14 +1,11 @@
-import React from "react";
-
-import chart from "../../assets/images/chart.png";
-import styledComponent from "../../assets/images/styledComponent.png";
+ 
+ 
 import node from "../../assets/images/node.png";
 import mongodb from "../../assets/images/mongodb.webp";
 import react from "../../assets/images/react.png";
 import js from "../../assets/images/js.png";
 import next from "../../assets/images/nextjs.png";
 import materialUi from "../../assets/images/materialUi.png";
-import html_css from "../../assets/images/html_css.png";
 
 export const projects = [
   {

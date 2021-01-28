@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { LandingStyle } from "./styles.js";
 import Menu from "../../component/Menu";
 import Header from "../../component/Header";

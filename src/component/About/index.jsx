@@ -2,7 +2,7 @@ import React from "react";
 import { AboutStyle } from "./styles";
 import { Flex } from "../Box/styles";
 // import pdf from "../../assets/images/My_Resume.pdf";
-import { ButtonStyled } from "../Button/styles";
+// import { ButtonStyled } from "../Button/styles";
 
 const About = () => {
   return (
