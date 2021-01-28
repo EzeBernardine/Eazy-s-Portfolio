@@ -16,6 +16,22 @@ export const StacksStyle = styled.div`
   .container {
     margin: auto;
     width: 100%;
+    @media (min-width: 1200px) {
+      border-top: 1px dashed #00ffcccf;
+      position: relative;
+      &:after {
+        content: "";
+        height: 1px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        top: 0;
+        border-top: 1px dashed #646a6975;
+        z-index: 0;
+      }
+    }
     @media (max-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
@@ -97,7 +113,7 @@ export const ScaleStyles = styled.div`
   position: relative;
   & > .name {
     position: absolute;
-    top: -12px;
+    top: -20px;
     color: white;
     right: 0;
     left: 0;

@@ -11,7 +11,7 @@ export const FooterStyle = styled.div`
     justify-content: center;
     li {
       margin: 20px;
-      background: #121417;
+      border: 1px solid #121417;
       border-radius: 100%;
       height: 40px;
       width: 40px;
@@ -23,7 +23,7 @@ export const FooterStyle = styled.div`
         background: #1f2229;
       }
       a {
-        color: #fbc56d;
+        color: #73a69d;
       }
     }
   }

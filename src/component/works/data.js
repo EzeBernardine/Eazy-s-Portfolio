@@ -78,7 +78,7 @@ export const projects = [
     ],
   },
   {
-    name: "EmBED",
+    name: "Learnfactory Nigeria",
     year: "2015",
     url: "#",
     key: 3,

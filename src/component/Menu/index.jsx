@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MenuStyle } from "./styles";
-import { NavLink } from "react-router-dom";
-// import pdf from "../../assets/images/My_Resume.pdf";
+// import { NavLink } from "react-router-dom";
+import pdf from "../../assets/images/ezekiel_CV.pdf";
 import { Flex } from "../Box/styles";
 import MenuIcon from "../MenuIcon";
 
@@ -53,11 +53,11 @@ const Menu = ({ about, contact }) => {
                 Contact
               </li>
               <li>
-                <button onClick={() => window.open("pdf")}>Resume</button>
+                <button onClick={() => window.open(pdf)}>Resume</button>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="./blog">Blog</NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </menu>

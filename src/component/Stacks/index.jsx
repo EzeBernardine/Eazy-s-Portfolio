@@ -6,7 +6,7 @@ const Stack = () => {
   const Stacks = [
     {
       name: "Javascript ES6",
-      range: 100,
+      range: 80,
       expKey: 1,
     },
     {
