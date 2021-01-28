@@ -34,7 +34,7 @@ const About = () => {
               <ButtonStyled text="Download CV" className="button-container">
                 <a
                   href={pdf}
-                  download="bernardine's_resume.pdf"
+                  download="Eazy's_resume.pdf"
                   className="button"
                 >
                   Download CV

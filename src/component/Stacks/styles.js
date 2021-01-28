@@ -8,6 +8,7 @@ export const StacksStyle = styled.div`
   & > h1 {
     padding: 0 10% 50px;
     color: white;
+    text-align: center;
     @media (max-width: 800px) {
       padding: 0% 5% 50px;
     }

@@ -15,7 +15,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://web.facebook.com/profile.php?id=100008556884999"
+              href="https://web.facebook.com/ezekielobinwa"
             >
               <FaFacebookF />
             </a>
@@ -24,7 +24,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://twitter.com/LadyBCodes"
+              href="https://twitter.com/ezekiel_obinwa"
             >
               <AiOutlineTwitter />
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://www.instagram.com/ezebernardinemay/"
+              href="https://www.instagram.com/ezekielblanc/"
             >
               <TiSocialInstagram />
             </a>
@@ -42,7 +42,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://medium.com/@demayous1"
+              href="https://medium.com/@ezekielblanc1"
             >
               <FaMediumM />
             </a>
@@ -51,7 +51,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://github.com/EzeBernardine"
+              href="https://github.com/Ezekielblanc1"
             >
               <AiFillGithub />
             </a>
@@ -60,7 +60,7 @@ const Footer = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://gitlab.com/EzeBernardineMay"
+              href="https://gitlab.com/Ezzy"
             >
               <AiFillGitlab />
             </a>
