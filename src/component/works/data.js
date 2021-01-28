@@ -5,6 +5,7 @@ import mongodb from "../../assets/images/mongodb.webp";
 import react from "../../assets/images/react.png";
 import js from "../../assets/images/js.png";
 import next from "../../assets/images/nextjs.png";
+import graphQL from "../../assets/images/GraphQL.png";
 import materialUi from "../../assets/images/materialUi.png";
 
 export const projects = [
@@ -23,8 +24,8 @@ export const projects = [
         icon: node,
       },
       {
-        name: "GraphicQl",
-        icon: node,
+        name: "GraphQL",
+        icon: graphQL,
       },
       {
         name: "MongoDB",
