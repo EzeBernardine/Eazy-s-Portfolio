@@ -3,7 +3,7 @@ import styled from "styled-components";
 const variantSize = (size) =>
   size
     ? size === "sm"
-      ? "0.59rem"
+      ? "0.67rem"
       : size === "md"
       ? "0.775rem"
       : size === "lg"

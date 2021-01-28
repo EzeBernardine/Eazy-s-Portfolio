@@ -108,21 +108,25 @@ export const MenuStyle = styled.div`
       width: 0;
       height: 0;
       visibility: hidden;
+      padding: 0
     }
 
     100% {
-      height: 245px;
+      height: 275px;
       width: 100%;
+      padding: 30px
     }
   }
   @keyframes slideIn {
     0% {
       width: 100%;
-      height: 245px;
+      padding: 30px;
+      height: 275px;
     }
 
     100% {
       width: 0;
+      padding: 0;
       height: 0;
       visibility: hidden;
     }

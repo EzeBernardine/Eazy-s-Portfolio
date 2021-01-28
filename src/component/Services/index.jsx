@@ -1,48 +1,36 @@
 import React from "react";
 import { ServicesStyle } from "./styles";
-import { Flex } from "../Box/styles";
+import { Flex, Grid } from "../Box/styles";
 
-const Services = ({ services }) => {
-  const myServices = [
+const Services = () => {
+  const service = [
     {
-      name: "Web Development",
-      about:
-        "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
-      img: require("../../assets/images/dev.png"),
-      exp_key: 1,
+      name: "DISCOVER",
+      preview:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae blanditiis repellat necessitatibus porro repudiandae voluptas provident assumenda mollitia? Expedita maiores consequatur perferendis veritatis quae, omnis similique optio quo velit.",
     },
     {
-      name: "Desktop Development",
-      about:
-        "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
-      img: require("../../assets/images/desktop.jpg"),
-      exp_key: 2,
+      name: "DEVELOP",
+      preview:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae blanditiis repellat necessitatibus porro repudiandae voluptas provident assumenda mollitia? Expedita maiores consequatur perferendis veritatis quae, omnis similique optio quo velit.",
+    },
+    {
+      name: "DEPLOY",
+      preview:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae blanditiis repellat necessitatibus porro repudiandae voluptas provident assumenda mollitia? Expedita maiores consequatur perferendis veritatis quae, omnis similique optio quo velit.",
     },
   ];
   return (
-    <ServicesStyle ref={services}>
-      <div className="container">
-        <header>
-          <h1>SERVICES</h1>
-          <p>I build Web, Mobile and Desktop Applications.</p>
-        </header>
-
-        <section>
-          <Flex className="cards" justifyContent="space-around">
-            {myServices.map(({ img, name, about, exp_key }) => (
-              <div className="card" key={exp_key}>
-                <div className="imgWrap">
-                  <img src={img} alt="" />
-                </div>
-                <div className="content">
-                  <h3>{name}</h3>
-                  <p>{about}</p>
-                </div>
-              </div>
-            ))}
+    <ServicesStyle>
+      <Grid gridCol="1fr 1fr 1fr" className="container" gap="50px">
+        {service.map(({ name, preview }, index) => (
+          <Flex flexDir="column" alignItems="flex-start">
+            <h1>0{+index}</h1>
+            <h2>{name}</h2>
+            <p>{preview}</p>
           </Flex>
-        </section>
-      </div>
+        ))}
+      </Grid>
     </ServicesStyle>
   );
 };

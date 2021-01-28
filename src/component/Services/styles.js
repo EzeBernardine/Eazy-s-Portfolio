@@ -1,87 +1,41 @@
 import styled from "styled-components";
 
 export const ServicesStyle = styled.div`
-  background: #14213de3;
-  padding: 50px 0;
+  background: #2d2f2f;
+  padding: 6% 10%;
   position: relative;
-  box-shadow: 0 2px 3px 3px #06060638;
+  z-index: 1;
+  @media (max-width: 800px) {
+    padding: 6% 5% 6%;
+  }
   .container {
-    header {
-      text-align: center;
-      width: 60%;
-      margin: auto;
-      @media (max-width: 600px) {
-        width: 80%;
-      }
-      h1 {
-        position: relative;
-        width: max-content;
-        margin: 30px auto;
-        color: #fff;
-        &:before {
-          background: #fca311;
-          content: "";
-          width: 40%;
-          height: 3px;
-          left: 0;
-          bottom: 5px;
-          position: absolute;
-        }
-      }
-      p {
-        color: #e5e5e5d4;
-        font-size: 1rem;
-      }
+    & > * {
+      text-align: start;
     }
-
-    section {
-      width: 60%;
-      margin: auto;
-      @media (max-width: 1250px) {
-        width: 80%;
-      }
-      @media (max-width: 450px) {
-        width: 100%;
-      }
-      .cards {
-        padding: 50px 0;
-        .card {
-          box-shadow: 0 0 2px 4px #06060638;
-          height: 200px;
-          width: 300px;
-          border-radius: 5px;
-          margin: 20px;
-          position: relative;
-          overflow: hidden;
-          &:hover {
-            box-shadow: 0 0 10px 10px #06060638;
-          }
-          .imgWrap {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            opacity: .6;
-            img {
-              height: 100%;
-              width: 100%;
-              object-fit: cover;
-            }
-          }
-          .content {
-            background: #ffffffc9;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            padding: 10px;
-            h3 {
-              color: #000;
-              font-family: "Charmonman", cursive;
-            }
-            p {
-              color: #000;
-              font-size: 0.85rem;
-            }
-          }
+    h1 {
+      color: #515c5a;
+      font-size: 4rem;
+      font-family: "Ultra", serif;
+    }
+    h2 {
+      margin: 30px 0;
+      font-weight: bolder;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 760px) {
+      grid-template-columns: 1fr;
+      & > div {
+        padding: 20px 0;
+        border-bottom: 1px solid #515c5a;
+        @media (max-width: 400px) {
+          align-items: center;
+          text-align: center
         }
       }
     }

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { MenuStyle } from "./styles";
 import { NavLink } from "react-router-dom";
-import pdf from "../../assets/images/My_Resume.pdf";
+// import pdf from "../../assets/images/My_Resume.pdf";
 import { Flex } from "../Box/styles";
 import MenuIcon from "../MenuIcon";
 
@@ -26,7 +26,7 @@ const Menu = ({ about, contact }) => {
       <header>
         <menu>
           <Flex className="navDiv" justifyContent="space-between">
-            <h1>Eazy Blanc</h1>
+            <h1>Eazy</h1>
             <MenuIcon
               click={handleDisplayMenu}
               showMenuDropdown={showMenuDropdown}
@@ -53,7 +53,7 @@ const Menu = ({ about, contact }) => {
                 Contact
               </li>
               <li>
-                <button onClick={() => window.open(pdf)}>Resume</button>
+                <button onClick={() => window.open("pdf")}>Resume</button>
               </li>
               <li>
                 <NavLink to="./blog">Blog</NavLink>

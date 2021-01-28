@@ -4,16 +4,18 @@ import { Flex, Grid } from "../Box/styles";
 import Button from "../Button";
 import { MdChatBubbleOutline } from "react-icons/md";
 import { FaArrowUp } from "react-icons/fa";
+import Circles from "../Circles";
+import About from "../About";
 
 const Landing = () => {
   return (
     <LandingStyle>
       <section className="main_container">
         <Flex className="sub-main">
-          <Flex>
+          <Flex className="profile">
             <Grid width="50%" className="caption-container" gap="20px">
               <div className="caption">
-                <h1>I'm Ezekiel Blanc</h1>
+                <h1>I'm Ezekiel</h1>
                 <h3>Back-end Developer</h3>
               </div>
               <div className="more-detail">
@@ -39,13 +41,19 @@ const Landing = () => {
               <div className="image-sub">
                 <img src={require("../../assets/images/ezekiel.jpg")} alt="" />
               </div>
-              <div className="circles"></div>
+              <Circles
+                highest={300}
+                color="#484848"
+                className={"grey-circles"}
+              />
+              <Circles highest={400} color="#00FFCC" className={"circles"} />
             </Flex>
           </Flex>
         </Flex>
-      </section>
 
-  
+        <About />
+        {/* <Services services={"services"} /> */}
+      </section>
     </LandingStyle>
   );
 };

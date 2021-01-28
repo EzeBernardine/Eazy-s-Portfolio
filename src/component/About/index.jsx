@@ -1,29 +1,32 @@
 import React from "react";
 import { AboutStyle } from "./styles";
 import { Flex } from "../Box/styles";
-import pdf from "../../assets/images/My_Resume.pdf";
+// import pdf from "../../assets/images/My_Resume.pdf";
 import { ButtonStyled } from "../Button/styles";
 
-const Menu = ({ about }) => {
+const About = () => {
   return (
     <AboutStyle>
-      <Flex className="container" ref={about}>
-        <div className="about">
-          <h1>About Me</h1>
-        </div>
-        <div className="aboutParagraph">
-          <div className="inside">
+      <Flex className="container" justifyContent="center">
+        <h1>ABOUT ME</h1>
+
+        <div className="about-me">
+          <Flex>
             <p>
-              Hi <span role="img" aria-label="waving emoji"> 👋</span>, I am Bernardine May, a front end developer
-              with keen interest in building out rich interactive experiences
-              and functional user interfaces.
-              <br /> My interests however extends beyond the web as when i am
-              not coding you can catch me seeing good interesting movies with
-              Nollywood movies being the best of them all, good books also
-              becomes my greatest company when the demands of debugging my code
-              becomes so profuse.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+              facere dolor nihil voluptatibus, totam aperiam omnis tempore
+              ducimus in! Quisquam fuga corporis dolorem? Cumque deleniti quidem
+              mollitia ad, Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Aut facere dolor nihil voluptatibus, totam aperiam omnis
+              tempore ducimus in! Quisquam fuga corporis dolorem? Cumque
+              deleniti quidem mollitia ad, Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Aut facere dolor nihil voluptatibus,
+              totam aperiam omnis tempore ducimus in! Quisquam fuga corporis
+              dolorem? Cumque deleniti quidem mollitia ad, officiis et.
             </p>
-            <Flex
+          </Flex>
+        </div>
+        {/* <Flex
               className="btns"
               justifyContent="space-around"
               alignItems="stretch"
@@ -37,11 +40,9 @@ const Menu = ({ about }) => {
                   Download CV
                 </a>
               </ButtonStyled>
-            </Flex>
-          </div>
-        </div>
+            </Flex> */}
       </Flex>
     </AboutStyle>
   );
 };
-export default Menu;
+export default About;

@@ -1,70 +1,41 @@
 import styled from "styled-components";
-import bk from "../../assets/images/aboutMe.jpg";
 
 export const AboutStyle = styled.div`
-  background: #e5e5e5d4;
-  background-image: url(${bk});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: lighten;
-  padding: 100px 0;
+  background: #161616;
 
-  .about {
-    width: 40%;
-    @media (max-width: 660px) {
-      width: 80%;
+  .container {
+    position: relative;
+    z-index: 10;
+    & > h1 {
+      text-align: center;
+      color: #161616;
+      font-size: 9rem;
+      word-spacing: 3rem;
+      letter-spacing: 3rem;
+      text-shadow: 0px 0px 1px #fbfbfb;
+      /* text-shadow: 0px 0px 1px #515c5a; */
+      line-height: 7rem;
     }
-    h1 {
-      position: relative;
-      width: max-content;
-      margin: auto;
-      &:before {
-        background: #fca311;
-        content: "";
-        width: 40%;
-        height: 3px;
-        bottom: 5px;
-        position: absolute;
+    .about-me {
+      margin: 6% 10% 0;
+      border: 1px solid #fff;
+      border-bottom: none;
+      border-radius: 30px 30px 0 0;
+      padding: 30px 30px 0;
+      @media (max-width: 800px) {
+        padding: 15px 15px 0;
+        margin: 6% 5% 0;
       }
-    }
-  }
-  .aboutParagraph {
-    width: 60%;
-    @media (max-width: 660px) {
-      width: 90%;
-    }
-    .inside {
-      width: 65%;
-      @media (max-width: 1200px) {
-        width: 80%;
-      }
-      @media (max-width: 750px) {
-        width: 90%;
-      }
-      @media (max-width: 660px) {
-        width: 100%;
-      }
-      p {
-        font-size: 1rem;
-        color: #4d4d4d;
-        text-align: start;
-        @media (max-width: 660px) {
-          text-align: center;
+      & > div {
+        border: 1px solid #fff;
+        border-bottom: none;
+        background: #2d2f2f;
+        padding: 30px;
+        @media (max-width: 800px) {
+          padding: 15px;
         }
-      }
-      .btns {
-        margin-top: 30px;
-        .button-container {
-          display: flex;
-          align-items: stretch;
-          .button {
-            display: flex;
-            align-items: center;
-          }
-        }
-        @media (min-width: 660px) {
-          justify-content: flex-start;
+        p {
+          color: white;
         }
       }
     }

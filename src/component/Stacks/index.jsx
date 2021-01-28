@@ -1,59 +1,100 @@
 import React from "react";
-import { StacksStyle } from "./styles";
-import { Flex } from "../Box/styles";
-import Scale from "../Scale";
+import { StacksStyle, ScaleStyles, LineScaleStyles } from "./styles";
+import { Flex, Grid } from "../Box/styles"; 
 
-const Stack = ({ skills }) => {
+const Stack = () => {
   const Stacks = [
     {
-      name: "HTML",
-      range: 90,
+      name: "Javascript ES6",
+      range: 100,
       expKey: 1,
     },
     {
-      name: "CSS",
+      name: "Nodejs",
       range: 94,
       expKey: 12,
     },
     {
-      name: "Javascript",
+      name: "Express",
       range: 80,
       expKey: 13,
     },
     {
-      name: "REACT",
+      name: "MongoDB",
       range: 80,
       expKey: 14,
     },
     {
-      name: "Electron",
-      range: 70,
+      name: "GraphQL",
+      range: 90,
       expKey: 15,
     },
     {
-      name: "Styled Component",
+      name: "HTML",
       range: 95,
       expKey: 16,
     },
     {
-      name: "SVG",
+      name: "CSS",
+      range: 70,
+      expKey: 16,
+    },
+    {
+      name: "Typescript",
       range: 70,
       expKey: 16,
     },
   ];
   return (
     <StacksStyle>
-      <Flex className="container" ref={skills}>
-        <div className="test">
-          <h1>My Skills</h1>
-        </div>
-        <section className="scales">
-          {Stacks.map((scale) => (
-            <Scale scale={scale} key={scale.expKey} />
-          ))}
-        </section>
-      </Flex>
+      <h1>My Stack</h1>
+      <Grid
+        className="container"
+        gridCol="repeat(12, 1fr)"
+        gap="0"
+        width="max-content"
+      >
+        {Stacks.map(({ range, name }) => (
+          <ScaleStyles
+            className="stack"
+            alignItems="flex-end"
+            range={range}
+            width={200}
+            height={400}
+            lightBgColor="#AEF2E5"
+            rangeBgColor="#00FFCCCF"
+            darkBgColor="#026854CF"
+          >
+            <span className="name">{name}</span>
+            <div className="scale-range"></div>
+          </ScaleStyles>
+        ))}
+      </Grid>
+
+      <Grid
+        className="line-scale-container"
+        gridCol=" 1fr"
+        gap="40px"
+        width="90%"
+      >
+        {Stacks.map(({ range, name }) => (
+          <LineScaleStyles
+            range={range}
+            justifyContent="flex-start"
+            lightBgColor="#AEF2E5"
+            rangeBgColor="#00FFCCCF"
+            darkBgColor="#026854CF"
+          >
+            <Flex className="line-scale-name" justifyContent="space-between">
+              <span>{name}</span>
+              <span>{range}%</span>
+            </Flex>
+            <div className="line-scale-range"></div>
+          </LineScaleStyles>
+        ))}
+      </Grid>
     </StacksStyle>
   );
 };
 export default Stack;
+// linear-gradient(to bottom,#AEF2E5 29%,#0FC,#161616b3 89%)
