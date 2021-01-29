@@ -52,6 +52,14 @@ const Menu = ({ about, contact }) => {
               >
                 Contact
               </li>
+              <li
+                onClick={() => {
+                  executeScrollContact("contact");
+                  handleDisplayMenu();
+                }}
+              >
+                Stack
+              </li>
               <li>
                 <button onClick={() => window.open(pdf)}>Resume</button>
               </li>
